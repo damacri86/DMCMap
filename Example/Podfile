@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DMCMap_Example' do
+  pod 'DMCMap', :path => '../'
+
+  target 'DMCMap_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
