@@ -40,7 +40,7 @@
 
 #pragma mark - Public
 
-+ (CGFloat)stopCardViewHeight {
++ (CGFloat)cardViewHeight {
     
     return 180.0;
 }

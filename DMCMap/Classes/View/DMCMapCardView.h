@@ -23,6 +23,6 @@
 @property (nonatomic, weak, nullable) IBOutlet UILabel *titleLabel;
 @property (nonatomic, weak, nullable) IBOutlet UIView *viewLabel;
 
-+ (CGFloat)stopCardViewHeight;
++ (CGFloat)cardViewHeight;
 
 @end
