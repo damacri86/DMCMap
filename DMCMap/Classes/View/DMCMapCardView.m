@@ -24,6 +24,10 @@
     
     if (self) {
         
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+        _viewLabel = [[UIView alloc] initWithFrame:CGRectZero];
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+
         [self customizeView];
     }
     
@@ -48,10 +52,6 @@
 #pragma mark - Private
 
 - (void)customizeView {
-    
-    self.imageView = [[UIImageView alloc] init];
-    self.viewLabel = [[UIView alloc] init];
-    self.titleLabel = [[UILabel alloc] init];
     
     [self addSubview:self.imageView];
     [self addSubview:self.viewLabel];

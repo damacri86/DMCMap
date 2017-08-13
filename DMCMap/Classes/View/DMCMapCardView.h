@@ -19,9 +19,9 @@
 @interface DMCMapCardView : UIView
 
 @property (nonatomic, weak, nullable) id<DMCCardViewDelegate> delegate;
-@property (nonatomic, strong, nullable) UIImageView *imageView;
-@property (nonatomic, strong, nullable) UILabel *titleLabel;
-@property (nonatomic, strong, nullable) UIView *viewLabel;
+@property (nonatomic, strong, nonnull) UIImageView *imageView;
+@property (nonatomic, strong, nonnull) UILabel *titleLabel;
+@property (nonatomic, strong, nonnull) UIView *viewLabel;
 
 + (CGFloat)cardViewHeight;
 
