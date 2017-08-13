@@ -103,7 +103,7 @@
     [self.viewLabel.layer insertSublayer:self.gradient atIndex:0];
 }
 
-- (IBAction)didButtonPressed:(UIButton *)button {
+- (void)didButtonPressed:(UIButton *)button {
     
     [self.delegate didCardViewPressed:self];
 }
