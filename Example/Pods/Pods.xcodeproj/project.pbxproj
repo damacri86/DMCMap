@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		016DD1E0D235F8F1337D468ECEF656B8 /* Pods_DMCMap_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMCMap_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		016DD1E0D235F8F1337D468ECEF656B8 /* Pods_DMCMap_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DMCMap_Example.framework; path = "Pods-DMCMap_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E78AD73576435D0CAD84BE5F1577153 /* DMCMapCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DMCMapCardView.m; sourceTree = "<group>"; };
 		13DB15C2500D8139B80D6F65413802D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1444BD7BB62D34134C5AC32D5BA8D361 /* Pods-DMCMap_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DMCMap_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		3AC2701612314717790951FEC5AD9A35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3E4282FF1D057DB88FDEF7960AEB93F7 /* Pods-DMCMap_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DMCMap_Example-frameworks.sh"; sourceTree = "<group>"; };
 		501D4EA0CB3E056C9DF58623AD35FC1B /* DMCMap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DMCMap-dummy.m"; sourceTree = "<group>"; };
-		558442C55361CEB9B2761EBDCF521B0B /* DMCMap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DMCMap.modulemap; sourceTree = "<group>"; };
+		558442C55361CEB9B2761EBDCF521B0B /* DMCMap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DMCMap.modulemap; sourceTree = "<group>"; };
 		58397B5B5BC9E2BDF8AFBC55A6A6AC49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		584FE249559F1B904E9A087694932282 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AA4B734D9498A3C7A693192BDA2C548 /* Pods-DMCMap_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DMCMap_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -61,12 +61,12 @@
 		79F3CEC03CCD248D61BFC24919D120CB /* Pods-DMCMap_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DMCMap_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		82C7A03E9D58249C9DAC4DABB2B40A0A /* Pods-DMCMap_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DMCMap_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8EF5819A00A6FFFC56089F5596E96AC2 /* Pods-DMCMap_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DMCMap_Example-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EF0AA0195393759DE6F5D9DE4105B48 /* Pods-DMCMap_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DMCMap_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		A2A941681145250B9904DB0927666B7A /* Pods-DMCMap_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DMCMap_Example-dummy.m"; sourceTree = "<group>"; };
-		B0A111FD712265D4775D3EEC24BD9B1C /* Pods_DMCMap_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMCMap_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0A111FD712265D4775D3EEC24BD9B1C /* Pods_DMCMap_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DMCMap_Tests.framework; path = "Pods-DMCMap_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DB1AA3EC22A732E0996682DEC937EC /* DMCMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DMCMapView.h; sourceTree = "<group>"; };
-		B5A2B31D9B59D55527E46B992F4931D5 /* DMCMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DMCMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A2B31D9B59D55527E46B992F4931D5 /* DMCMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DMCMap.framework; path = DMCMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8436533CEC029288113A22556AA9D09 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		BF93AE17A88AFEF85019AF081AF0472B /* Pods-DMCMap_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DMCMap_Example-umbrella.h"; sourceTree = "<group>"; };
 		C1E8F678DEE3ED3389F5FF2A4DF1A4F4 /* DMCMapAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DMCMapAnnotation.m; sourceTree = "<group>"; };
@@ -75,9 +75,9 @@
 		D0916062F0B7E19D67E0A3687713E6C1 /* Pods-DMCMap_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DMCMap_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E28E041379BD62DC8A1FD4BAE0CCB2D5 /* Pods-DMCMap_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DMCMap_Tests-dummy.m"; sourceTree = "<group>"; };
 		E337893DDD8BC0BBBD5DCC7D8804BA4F /* Pods-DMCMap_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DMCMap_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E8CCDDF9C0C16E14C84F1604D115CEF5 /* Pods-DMCMap_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DMCMap_Example.modulemap"; sourceTree = "<group>"; };
+		E8CCDDF9C0C16E14C84F1604D115CEF5 /* Pods-DMCMap_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DMCMap_Example.modulemap"; sourceTree = "<group>"; };
 		EC8D3F04BEC6E7A3006FE87DFA3BB810 /* DMCMapCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DMCMapCardView.h; sourceTree = "<group>"; };
-		FA4D78B8323995EA959813FBBF7DF03B /* Pods-DMCMap_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DMCMap_Tests.modulemap"; sourceTree = "<group>"; };
+		FA4D78B8323995EA959813FBBF7DF03B /* Pods-DMCMap_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DMCMap_Tests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +116,7 @@
 				6E832EDDDFBE660DBC507EDF3BE091D7 /* DMCMapAnnotation.h */,
 				C1E8F678DEE3ED3389F5FF2A4DF1A4F4 /* DMCMapAnnotation.m */,
 			);
+			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -187,6 +188,7 @@
 				B4DB1AA3EC22A732E0996682DEC937EC /* DMCMapView.h */,
 				6874D6CE66ABE8A4B2AA2BD0BB104EBD /* DMCMapView.m */,
 			);
+			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -206,6 +208,7 @@
 			children = (
 				9527B4DF304CA6F6DE5602483A92F887 /* Classes */,
 			);
+			name = DMCMap;
 			path = DMCMap;
 			sourceTree = "<group>";
 		};
@@ -215,6 +218,7 @@
 				0B741FE3FDF5C3D5520D3653AB64D6B8 /* Model */,
 				757A0D85BFDD03E5AEF99D51C5B15DC2 /* View */,
 			);
+			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};

@@ -11,7 +11,6 @@
 @interface DMCMapAnnotation ()
 
 @property (nonatomic, readwrite, assign) CLLocationCoordinate2D coordinate;
-@property (nonatomic, readwrite, assign) NSInteger categoryId;
 @property (nonatomic, readwrite, copy, nullable) NSString *title;
 @property (nonatomic, readwrite, copy, nullable) NSString *subtitle;
 @property (nonatomic, readwrite, copy, nullable) NSString *imageName;
@@ -25,8 +24,7 @@
 - (nullable instancetype)initWithCoordinate:(CLLocationCoordinate2D)coordinate
                                   withTitle:(nullable NSString *)title
                                withSubtitle:(nullable NSString *)subtitle
-                              withImageName:(nullable NSString *)imageName
-                                 categoryId:(NSInteger)categoryId {
+                              withImageName:(nullable NSString *)imageName {
     
     self = [super init];
     
@@ -36,7 +34,6 @@
         _title = title;
         _subtitle = subtitle;
         _imageName = imageName;
-        _categoryId = categoryId;
     }
     
     return self;

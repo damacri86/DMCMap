@@ -12,13 +12,14 @@
     "damacri86": "damacri86@gmail.com"
   },
   "source": {
-    "git": "https://github.com/damacri86/DMCMap.git",
+    "git": "https://github.com/damacri86/DMCMap",
     "tag": 0.1
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "DMCMap/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
   "frameworks": [
     "UIKit",
     "MapKit",

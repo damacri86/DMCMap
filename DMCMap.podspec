@@ -14,8 +14,9 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/damacri86/DMCMap'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'damacri86' => 'damacri86@gmail.com' }
-  s.source           = { :git => 'https://github.com/damacri86/DMCMap.git', :tag => 0.1 }
+  s.source           = { :git => 'https://github.com/damacri86/DMCMap', :tag => 0.1 }
   s.ios.deployment_target = '9.0'
   s.source_files = 'DMCMap/Classes/**/*'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'MapKit', 'Foundation'
 end
