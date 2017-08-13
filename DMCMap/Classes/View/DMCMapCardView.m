@@ -54,14 +54,19 @@
 
 - (void)customizeView {
     
+    UIButton *button = [[UIButton alloc] init];
+    [button addTarget:self action:@selector(didButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
     self.imageView.translatesAutoresizingMaskIntoConstraints = false;
     self.viewLabel.translatesAutoresizingMaskIntoConstraints = false;
     self.titleLabel.translatesAutoresizingMaskIntoConstraints = false;
+    button.translatesAutoresizingMaskIntoConstraints = false;
     
     [self addSubview:self.imageView];
     [self addSubview:self.viewLabel];
     [self addSubview:self.titleLabel];
-    
+    [self addSubview:button];
+
     [self.imageView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor].active = true;
     [self.imageView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor].active = true;
     [self.imageView.topAnchor constraintEqualToAnchor:self.topAnchor].active = true;
@@ -77,10 +82,16 @@
     [self.titleLabel.heightAnchor constraintEqualToConstant:21.0].active = true;
     [self.titleLabel.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:-10.0].active = true;
     
+    [button.leadingAnchor constraintEqualToAnchor:self.leadingAnchor].active = true;
+    [button.trailingAnchor constraintEqualToAnchor:self.trailingAnchor].active = true;
+    [button.topAnchor constraintEqualToAnchor:self.topAnchor].active = true;
+    [button.bottomAnchor constraintEqualToAnchor:self.bottomAnchor].active = true;
+    
     self.clipsToBounds = YES;
     self.imageView.clipsToBounds = YES;
     self.viewLabel.clipsToBounds = YES;
     self.titleLabel.clipsToBounds = YES;
+    button.clipsToBounds = YES;
     
     self.titleLabel.textColor = [UIColor whiteColor];
     self.titleLabel.font = [UIFont boldSystemFontOfSize:17.0];
@@ -92,7 +103,7 @@
     [self.viewLabel.layer insertSublayer:self.gradient atIndex:0];
 }
 
-- (IBAction)didButtonPressed:(id)sender {
+- (IBAction)didButtonPressed:(UIButton *)button {
     
     [self.delegate didCardViewPressed:self];
 }
