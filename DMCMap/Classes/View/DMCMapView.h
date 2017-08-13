@@ -6,7 +6,8 @@
 //  Copyright © 2017 damacri.pods. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+
 #import "DMCMapAnnotation.h"
 
 @class DMCMapView;
