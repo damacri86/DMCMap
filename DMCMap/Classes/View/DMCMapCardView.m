@@ -27,7 +27,7 @@
         _imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
         _viewLabel = [[UIView alloc] initWithFrame:CGRectZero];
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-
+        
         [self customizeView];
     }
     
@@ -35,6 +35,7 @@
 }
 
 - (void)layoutSubviews {
+    
     [super layoutSubviews];
     
     self.gradient.frame = self.viewLabel.bounds;
@@ -53,6 +54,10 @@
 
 - (void)customizeView {
     
+    self.imageView.translatesAutoresizingMaskIntoConstraints = false;
+    self.viewLabel.translatesAutoresizingMaskIntoConstraints = false;
+    self.titleLabel.translatesAutoresizingMaskIntoConstraints = false;
+    
     [self addSubview:self.imageView];
     [self addSubview:self.viewLabel];
     [self addSubview:self.titleLabel];
@@ -66,12 +71,20 @@
     [self.viewLabel.trailingAnchor constraintEqualToAnchor:self.trailingAnchor].active = true;
     [self.viewLabel.heightAnchor constraintEqualToConstant:52.0].active = true;
     [self.viewLabel.bottomAnchor constraintEqualToAnchor:self.bottomAnchor].active = true;
-
-    [self.viewLabel.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:16.0].active = true;
-    [self.viewLabel.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:-16.0].active = true;
-    [self.viewLabel.heightAnchor constraintEqualToConstant:21.0].active = true;
-    [self.viewLabel.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:-10.0].active = true;
-
+    
+    [self.titleLabel.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:16.0].active = true;
+    [self.titleLabel.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:-16.0].active = true;
+    [self.titleLabel.heightAnchor constraintEqualToConstant:21.0].active = true;
+    [self.titleLabel.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:-10.0].active = true;
+    
+    self.clipsToBounds = YES;
+    self.imageView.clipsToBounds = YES;
+    self.viewLabel.clipsToBounds = YES;
+    self.titleLabel.clipsToBounds = YES;
+    
+    self.titleLabel.textColor = [UIColor whiteColor];
+    self.titleLabel.font = [UIFont boldSystemFontOfSize:17.0];
+    
     self.layer.cornerRadius = 10.0;
     self.gradient = [CAGradientLayer layer];
     self.gradient.frame = self.viewLabel.bounds;
