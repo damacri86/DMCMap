@@ -1,0 +1,6 @@
+framework module DMCMap {
+  umbrella header "DMCMap-umbrella.h"
+
+  export *
+  module * { export * }
+}

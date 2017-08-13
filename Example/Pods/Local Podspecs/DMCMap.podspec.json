@@ -1,0 +1,27 @@
+{
+  "name": "DMCMap",
+  "version": "0.1.0",
+  "summary": "Map view with vitamins.",
+  "description": "MKMapView with accessories.",
+  "homepage": "https://github.com/damacri86/DMCMap",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "damacri86": "damacri86@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/damacri86/DMCMap.git",
+    "tag": 0.1
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "DMCMap/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "MapKit",
+    "Foundation"
+  ]
+}

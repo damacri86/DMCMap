@@ -19,6 +19,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "DMCMap"
 ```
+After that, you will be able to use DMCMapView as a simple view :)
 
 ## Author
 

@@ -7,23 +7,50 @@
 //
 
 #import "DMCViewController.h"
+#import <DMCMap/DMCMapView.h">
 
-@interface DMCViewController ()
+@interface DMCViewController () <DMCMapViewDelegate>
 
 @end
 
 @implementation DMCViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+#pragma mark - Lifecycle
+
+- (void)loadView {
+    
+    self.view = [[DMCMapView alloc] initWithCenterCoordinate:CLLocationCoordinate2DMake(40.415011, -3.683855)
+                                                isScrollable:YES];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    
+    
 }
+
+#pragma mark - DMCMapViewDelegate
+
+- (void)mapViewDidFinishRenderingMap:(nonnull DMCMapView *)mapView fullyRendered:(BOOL)fullyRendered {
+
+    NSLog(@"Map fully rendered");
+}
+
+- (void)mapView:(nonnull DMCMapView *)mapView didAnnotationSelected:(nonnull DMCMapAnnotation *)annotation {
+
+    NSLog(@"Did annotation selected with title %@", annotation.title);
+}
+
+- (void)mapView:(nonnull DMCMapView *)mapView didDeselectAnnotationView:(nonnull DMCMapAnnotation *)annotation {
+
+    NSLog(@"Did annotation diselected with title %@", annotation.title);
+}
+
+- (void)mapView:(nonnull DMCMapView *)mapView didAnnotationCalloutPressed:(nonnull DMCMapAnnotation *)annotaton {
+    
+    NSLog(@"Did annotation callout pressed with title %@", annotaton.title);
+}
+
 
 @end

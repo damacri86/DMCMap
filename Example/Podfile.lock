@@ -1,0 +1,16 @@
+PODS:
+  - DMCMap (0.1.0)
+
+DEPENDENCIES:
+  - DMCMap (from `../`)
+
+EXTERNAL SOURCES:
+  DMCMap:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DMCMap: 6e554470f6cd5b7571cadd543b15e864070c9887
+
+PODFILE CHECKSUM: df1822f26cf055ec590ededeee525f6bd00bf0d6
+
+COCOAPODS: 1.2.1
