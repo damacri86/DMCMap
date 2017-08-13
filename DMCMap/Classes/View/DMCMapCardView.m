@@ -24,7 +24,6 @@
     
     if (self) {
         
-        self = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] firstObject];
         [self customizeView];
     }
     
@@ -50,6 +49,29 @@
 
 - (void)customizeView {
     
+    self.imageView = [[UIImageView alloc] init];
+    self.viewLabel = [[UIView alloc] init];
+    self.titleLabel = [[UILabel alloc] init];
+    
+    [self addSubview:self.imageView];
+    [self addSubview:self.viewLabel];
+    [self addSubview:self.titleLabel];
+    
+    [self.imageView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor].active = true;
+    [self.imageView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor].active = true;
+    [self.imageView.topAnchor constraintEqualToAnchor:self.topAnchor].active = true;
+    [self.imageView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor].active = true;
+    
+    [self.viewLabel.leadingAnchor constraintEqualToAnchor:self.leadingAnchor].active = true;
+    [self.viewLabel.trailingAnchor constraintEqualToAnchor:self.trailingAnchor].active = true;
+    [self.viewLabel.heightAnchor constraintEqualToConstant:52.0].active = true;
+    [self.viewLabel.bottomAnchor constraintEqualToAnchor:self.bottomAnchor].active = true;
+
+    [self.viewLabel.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:16.0].active = true;
+    [self.viewLabel.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:-16.0].active = true;
+    [self.viewLabel.heightAnchor constraintEqualToConstant:21.0].active = true;
+    [self.viewLabel.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:-10.0].active = true;
+
     self.layer.cornerRadius = 10.0;
     self.gradient = [CAGradientLayer layer];
     self.gradient.frame = self.viewLabel.bounds;
